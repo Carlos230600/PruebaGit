@@ -1,0 +1,9 @@
+Nginx
+
+dockercompose: fichero de configuracion, en el que se especifican 
+diferentes datos, como el nombre de la MV deseada, y que imagen se va a iniciar.
+
+
+/*CREACION DE REDES EN DOCKER*/
+docker network create nombredered
+docker network create spring

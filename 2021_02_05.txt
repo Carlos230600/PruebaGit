@@ -1,0 +1,36 @@
+Tdd: Test Drivement development(Primero hago el test, programo contra el test y refactorizo(volverlo mas eficiente)). Si la funcion esta bien desarrollada, pasará el test
+
+Solid: Es un conjunto de nomeclaturas:
+	S:Single Responsability Principle(SRP):Clases con solo 1 	  responsabilidad, p.ej:Una clase que muestra algo en pantalla
+	O:Open/Closed Principle(OCP). Una clase tiene que estar abierta
+	  para ampliacion y cerrada para modificacion(la parte que ya 	  esta hecha).p.ej: el consolelogprinter, queremos que ahora
+          muestre datos extra, no borramos el codigo anterior sino que 
+	  lo ampliamos.
+	I:Interface - Todo lo que se repita llevarloa a interfaces, que 	  evitan la polimorfia(poder heredar de varias clases a la vez),
+	  es como el Single Responsibility Principle pero aplicado a 	  interfaces
+
+
+
+Dry:Dry(Dont repeat yourself), p.ej: empleado,empleado_becario,emplado asalariado, todos tienen muchas cosas en comun dentro del codigo, todo lo que se repita lo moveremos a una interfaz(como una plantilla que indica como se desarolla), las clases
+heredan.
+
+Kiss(Keep it simple stupid): Mantenerlo simple
+
+Uncle BoB: Programador ultra senior, un señor que vio los problemas de 
+la programacion en su desarrollo. Comenzo a dedicarse a las charlas y hablar sobre las buenas practicas de programacion, y mantener el codigo limpio.
+
+/*DUDAS Y RECOMENDACIONES*/
+Recomendacion libro: Clean Coder.
+Recomendacion: js naming convections
+Recomendacion: Jasmine(JavaScript Framework) y Karma(Framework), vienen
+instalados por defecto en angular.
+¿Que son los lenguajes egma?
+¿Que es nestear(promesas)?
+¿Principio de inversion de dependencias , Principio de Eriskov?
+¿CamelCasing?
+¿Aritmetica Modular?
+¿Programacion Iterativa?
+
+/*Buen Código(Limpio)*/
+Metodos pequeños, clases compactas,simpleza
+

@@ -1,0 +1,60 @@
+Comandos Ubuntu
+----------------
+docker pull ...// Para descargar una imagen de docker hub. 
+
+docker run ... // Iniciar una imagen/descargarla e iniciarla. 
+docker run ubuntu
+
+docker ps // Mostrar imagenes activas
+
+docker ps -a  //Mostrar imagenes recientemente activas o dormidas
+
+docker run -it ...// "-it" Para una sesion interactiva y que capture la terminal para permitir escribir dentro.
+   :
+   :---> Para asignarle un nombre a la MV creada:
+	 docker run --name nombremaquina -it ...
+	 docker run --name mimaquina -it ubuntu
+
+docker exec -it ...// Para "despertar" maquinas que estan dormidas o en reposo. Se regresa al estado en el que estaba cuando se paró.
+   :
+   :---> En caso de usar docker run... no se conservan los cambios en el
+	 explorador de ficheros. ya que crea una nueva instancia de 	          maquina virtual.
+
+docker stop idmaquina //Para parar la MV indicada.
+docker stop 
+
+docker start idmaquina// Para iniciar maquinas dormidas.
+
+Para todas aquellas maquinas en dormidas , puedo eliminarlas para 
+reducir los recursos que consumen de mi equipo en caso de no estas usandolas. Para ello: docker rm idmaquina
+
+
+docker run --name mimaquina -v "C:\users\Carlo\":/etx/nginx/nginx.conf:ro -p80:80 --net mired -h nginxserver -it nginx  //Para compartir una unidad de windows 
+
+docker images //Para ver las imagenes que tengo descargadas
+
+docker rmi ...//Para borrar una imagen, si hay algo en ejecucion no deja
+
+
+**INDICAR VARIABLES VIA COMANDO**
+docker run --name mysql-clase -e MYSQL_ROOT_PASSWORD=clase -d mysql
+-e // Para indicar valores
+-d //Para ejecutarlo en background
+
+
+**CONEXION A mysql**
+docker exec -it nombremaquina bash //Inicio el contenedor, este comando ejecuta el "bash" de la imagen.
+
+mysql -u root -p // -u(Indico usuario: root) -p:Indicare contraseña
+Inicio de sesion en mysql
+
+
+docker inspect nombremaquina |
+			     | Para mostrar datos de la maquina 
+docker inspect idmaquina     |
+
+
+Enlace: 
+https://bosonitmy.sharepoint.com/personal/jesus_javier_bosonit_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjesus%5Fjavier%5Fbosonit%5Fcom%2FDocuments%2FGrabaciones%2FFormaci%C3%B3n%20FullStack%20Primera%20semana%2D20210201%5F160456%2DGrabaci%C3%B3n%20de%20la%20reuni%C3%B3n%2Emp4&parent=%2Fpersonal%2Fjesus%5Fjavier%5Fbosonit%5Fcom%2FDocuments%2FGrabaciones&originalPath=aHR0cHM6Ly9ib3Nvbml0LW15LnNoYXJlcG9pbnQuY29tLzp2Oi9wL2plc3VzX2phdmllci9FWXNEa0xOV0pYRktrM1Z6bEsxTGlHZ0IzNXNOaFJ6S216T3FOY2h0YzN0WS1RP3J0aW1lPWwwbzRsbzdJMkVn
+
+Ver desde:min 55:00

@@ -1,0 +1,20 @@
+/*Crear red en docker*/
+docker network create mired
+
+/*Ejecutar aplicación de Spring*/
+docker run -it --name sprint --net mired -h springapp -p8080:8080 spring
+-h para darle un nombre a mi host
+-p para indicar puertos
+spring es el nombre de la aplicacion que quiero ejecutar
+
+/*Usaremos*/
+angular
+angular material
+RxJS
+typescript
+
+/*Extras*/
+Testdrivendevelopment
+rgnx
+libreria de testing de end to end
+
